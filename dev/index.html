@@ -17,16 +17,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body ng-app="dribbbleApp">
+  <body ng-app="core">
     <div class="">
       <header>
 
       </header>
     </div>
-    <div class="">
+    <div class="container" ng-controller="shotsListController">
       <main>
-        <h1>Hello, {{ beautiful }}!</h1>
-        <input ng-model="beautiful" type="text" name="name" value="">
+        <section class="col-xs-6 col-md-4" ng-repeat="shot in list.data">
+          <article class="thumbnail">
+            <a href="#/shots/{{shot.id}}">
+              <img ng-src="{{shot.images.normal}}" alt="" class="img-responsive" />
+            </a>
+            <div class="caption text-center">
+              <h3>{{shot.title}}</h3>
+            </div>
+          </article>
+        </section>
       </main>
     </div>
     <div class="">
