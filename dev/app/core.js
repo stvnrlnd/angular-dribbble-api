@@ -5,6 +5,7 @@
   var accessToken = '';
 
   angular.module('core', [])
+
     .controller('shotsListController', function($scope, $http) {
       $scope.list;
       $http.jsonp('https://api.dribbble.com/v1/shots?callback=JSON_CALLBACK&access_token=' + accessToken)
