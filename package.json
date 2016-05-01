@@ -1,0 +1,25 @@
+{
+  "name": "angular-dribbble-api",
+  "version": "0.0.1",
+  "description": "A just-for-fun AngularJS application to consume the dribbble API. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stvnrlnd/angular-dribbble-api.git"
+  },
+  "keywords": [
+    "dribbble",
+    "angular",
+    "api"
+  ],
+  "author": "Steven Roland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stvnrlnd/angular-dribbble-api/issues"
+  },
+  "homepage": "https://github.com/stvnrlnd/angular-dribbble-api#readme"
+}
